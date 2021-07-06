@@ -1,0 +1,1197 @@
+@media screen and (min-width: 1921px) {
+  .width-max() {
+    width: 1900px;
+    margin: 0 auto;
+  }
+  .width-medium {
+    width: 1700px;
+    margin: 0 auto;
+  }
+
+  #first {
+    #header {
+      #header-menu {
+        width: 800px;
+
+        a {
+          font-size: 22px;
+        }
+      }
+    }
+
+    #first-kitchens {
+      width: 1500px;
+
+
+      #kitchen-content {
+        #advantages {
+          .advantage {
+            .advantage-text {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #guarantees {
+    background-size: 100%;
+    background-position: center;
+
+    #guarantees-container {
+      .width-medium();
+
+      #guarantee-container {
+        justify-content: space-evenly;
+
+        .guarantee {
+          width: 500px;
+
+          &:nth-child(3) {
+            width: 500px;
+          }
+
+          &:nth-child(4) {
+            width: 500px;
+          }
+
+          .guarantee-title {
+            font-size: 30px;
+            margin-bottom: 20px;
+          }
+
+          .guarantee-text {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+
+  #portfolio {
+    .width-max();
+
+    #kitchens {
+      margin: 50px auto 0 auto;
+      width: 1700px;
+
+      .slick-next {
+        left: 730px;
+      }
+
+      .kitchen {
+        width: 100%;
+        justify-content: space-between;
+
+        .kitchen-content {
+          width: 600px;
+
+          .kitchen-title {
+            font-size: 30px;
+          }
+
+          .kitchen-info {
+            .kitchen-info-content {
+              .kitchen-info-name {
+                font-size: 21px;
+              }
+
+              .kitchen-info-type {
+                font-size: 21px;
+              }
+            }
+          }
+
+          .location {
+            .location-item {
+              span {
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .title {
+    .width-medium();
+  }
+
+
+  #pluses {
+    #pluses-container {
+      .width-medium();
+      justify-content: space-evenly;
+
+      .plus {
+        .plus-text {
+          font-size: 20.696px;
+        }
+      }
+    }
+
+    .width-max();
+
+    #new-kitchen {
+      .width-medium();
+
+      #new-kitchen-content {
+        .new-kitchen-info {
+          .new-title {
+            font-size: 30px;
+          }
+
+          &:first-child .new-kitchen-text {
+            width: 600px;
+          }
+
+          .new-kitchen-text {
+            width: 600px;
+            font-size: 20px;
+
+          }
+        }
+      }
+
+      #new-kitchen-image {
+        width: 900px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    #experience {
+      width: 1500px;
+      margin: 0 auto;
+    }
+  }
+
+  #reviews {
+    width: 1700px;
+
+    #reviews-container {
+      .review {
+        margin: 78px 60px 0 60px;
+
+      }
+    }
+  }
+
+  #contacts {
+    width: 1500px;
+
+    .title {
+      width: 1000px;
+      margin-left: 0;
+    }
+
+    #form-container {
+      margin-left: 130px;
+    }
+  }
+
+  .slick-dots {
+    left: -450px;
+    bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  #contacts {
+    #contacts-image {
+      z-index: -1;
+      right: 0;
+    }
+  }
+}
+
+/* 1220 - 1023 */
+@media screen and (max-width: 1221px) {
+  #first, #guarantees, #portfolio, #pluses, #reviews, #contacts, #footer {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  #first {
+    #header {
+      width: 100%;
+
+      .logo {
+        width: 120px;
+      }
+    }
+
+    #first-kitchens {
+      width: 800px;
+
+    }
+  }
+
+  #guarantees {
+    #guarantees-container {
+      width: 100%;
+
+      #guarantee-container {
+        width: 800px;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        .guarantee {
+          width: 350px;
+
+          &:first-child {
+            margin-left: 0;
+          }
+
+          &:nth-child(2) {
+            margin-left: 0;
+          }
+
+          &:nth-child(3) {
+            margin-left: 0;
+            margin-top: 90px;
+          }
+
+          &:last-child {
+            margin-left: 0;
+            margin-top: 180px;
+          }
+        }
+      }
+    }
+  }
+
+  #portfolio {
+    padding-top: 100px;
+
+    #kitchens {
+      margin: 0 auto;
+      width: 800px;
+
+      .slick-dots {
+        top: 465px;
+        left: 0;
+        height: 20px;
+      }
+
+      .slick-prev, .slick-next {
+        top: 250px;
+      }
+
+      .slick-next {
+        right: 30px;
+      }
+
+      .kitchen {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .kitchen-content {
+          border-radius: 30px;
+          padding: 30px;
+          border: 1px solid rgba(126, 123, 121, 0.2);
+          margin-top: 70px;
+          box-shadow: 0 0 10px rgba(126, 123, 121, 0.2);
+          z-index: 9999;
+          margin-bottom: 20px;
+
+          &:hover {
+            transition: all 1s ease;
+            transform: scale(1.1);
+          }
+
+          .kitchen-number {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  #pluses {
+    #pluses-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 50px;
+
+      .plus {
+        margin-top: 30px;
+      }
+    }
+
+    #new-kitchen {
+      #new-kitchen-image {
+        position: absolute;
+        z-index: -1;
+        right: 10px;
+      }
+    }
+
+    #experience {
+      #experience-content {
+        width: 560px;
+
+        #experience-content-text {
+          width: 400px;
+        }
+      }
+    }
+  }
+
+  #footer {
+    #footer-container {
+      width: 100%;
+    }
+  }
+
+  .title {
+
+    .title-text {
+      width: 500px;
+    }
+
+    .title-description {
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+
+/* 768 - 1023 */
+@media screen and (max-width: 1023px) {
+  #first {
+    #header {
+      .logo {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  #first {
+    #first-kitchens {
+      width: 500px;
+
+      #first-kitchens-title {
+        width: 100%;
+      }
+
+      #kitchen-content {
+        width: 500px;
+
+        #first-key {
+          #first-key-text {
+            font-size: 21px;
+          }
+        }
+
+        #advantages {
+          .advantage {
+            .advantage-text {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #guarantees {
+    #guarantees-container {
+      width: 100%;
+      padding-top: 50px;
+
+      #guarantee-container {
+        padding-top: 0;
+        width: 100%;
+
+        .guarantee {
+          text-align: center;
+          width: 300px;
+
+          &:nth-child(2) {
+            margin-top: 0;
+          }
+
+          &:nth-child(3) {
+            margin-top: 0;
+            width: 300px;
+          }
+
+          &:nth-child(4) {
+            margin-top: 0;
+            width: 300px;
+          }
+
+          .guarantee-title {
+            width: 100%;
+          }
+
+          .guarantee-text {
+            width: 100%;
+          }
+
+          .guarantee-number {
+            position: static;
+          }
+        }
+      }
+    }
+  }
+
+  #portfolio {
+    padding-top: 300px;
+
+    #kitchens {
+      width: 500px;
+
+      .kitchen {
+        .kitchen-image {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .slick-next {
+        top: 180px;
+        right: 20px;
+      }
+
+      .slick-prev {
+        left: 30px;
+        top: 180px;
+      }
+
+      .slick-dots {
+        top: 300px;
+      }
+    }
+  }
+
+  #pluses {
+    overflow: hidden;
+
+    #experience {
+      flex-direction: column;
+
+      #experience-content {
+        border: 2px solid #bdb1a5;
+        border-radius: 0 0 20px 20px;
+        border-top: none;
+        width: 300px;
+        box-sizing: border-box;
+        padding: 40px 20px 10px 20px;
+
+        #experience-content-apostrophe {
+          left: 20px;
+          z-index: -1;
+        }
+
+        #experience-content-text {
+          width: 100%;
+        }
+
+        #experience-content-man {
+          justify-content: center;
+          flex-wrap: wrap;
+          align-items: center;
+
+          #man-name {
+            order: 2;
+          }
+
+          #man-image {
+            order: 1;
+          }
+        }
+      }
+    }
+
+    #new-kitchen {
+      #new-kitchen-image {
+        margin-top: 100px;
+        width: 500px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .title {
+    .title-image {
+      margin-right: 10px;
+    }
+
+    .title-description {
+      width: 700px;
+    }
+  }
+
+  #reviews {
+    margin-top: 90px;
+  }
+
+  #footer {
+    background-size: auto 100%;
+    height: auto;
+
+    #footer-container {
+      #blocks-container {
+        width: 700px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+
+        .footer-block {
+          padding-top: 46px;
+          width: 250px;
+        }
+      }
+    }
+  }
+
+  #order-container {
+    #order-bg-block {
+      width: 700px;
+
+      #order {
+        width: 100%;
+
+        #order-content {
+          #order-form {
+
+            #name {
+              width: 100%;
+            }
+
+            #phone {
+              width: 100%;
+            }
+
+            .btn {
+              width: 100%;
+            }
+
+            #name-error {
+              right: 180px;
+            }
+
+            #phone-error {
+              right: 130px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 580 - 768 */
+@media screen and (max-width: 767px) {
+  #first {
+    height: auto;
+    background-size: auto 100%;
+
+    #header {
+      flex-direction: column;
+      align-items: center;
+
+      .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      #header-menu {
+        width: 100%;
+      }
+    }
+
+    #first-kitchens {
+      margin-top: 100px;
+      margin-bottom: 0;
+      padding-bottom: 30px;
+
+      #first-kitchens-title {
+        width: 300px;
+      }
+    }
+  }
+
+  .title {
+    .title-text {
+      font-size: 25px;
+      width: 350px;
+    }
+
+    .title-description {
+      font-size: 15px;
+      width: 500px;
+    }
+  }
+
+  #guarantees {
+    background-position: center;
+    height: auto;
+
+    #guarantees-container {
+      #guarantee-container {
+        width: 300px;
+        text-align: center;
+
+        .guarantee {
+          .guarantee-number {
+            margin-bottom: -50px;
+          }
+        }
+      }
+    }
+  }
+
+  #portfolio {
+    padding-top: 100px;
+
+    #kitchens {
+      width: 500px;
+
+      .kitchen {
+        .kitchen-image {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .kitchen-content {
+          .location {
+            margin-top: 50px;
+          }
+        }
+      }
+
+      .slick-next {
+        top: 180px;
+        right: 20px;
+      }
+
+      .slick-prev {
+        left: 30px;
+        top: 180px;
+      }
+
+      .slick-dots {
+        top: 300px;
+
+        button#slick-slide-control00, button#slick-slide-control01, button#slick-slide-control02, button#slick-slide-control03 {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  #pluses {
+    #pluses-container {
+      padding-top: 0;
+    }
+
+    .title {
+      margin-top: 100px;
+    }
+
+    #new-kitchen {
+      #new-kitchen-image {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  #contacts {
+    margin-bottom: 0;
+    padding-bottom: 66px;
+    overflow: hidden;
+
+    #contacts-image {
+
+      right: 200px;
+      width: 180px;
+    }
+
+    #form-container {
+      width: 300px;
+
+      #form-title {
+        width: 100%;
+      }
+
+      #form {
+        .error#form-name-error {
+          top: 92px;
+          left: 24px;
+          font-size: 12px;
+        }
+
+        .error#form-phone-error {
+          top: 181px;
+          left: 24px;
+          font-size: 12px;
+          width: 191px;
+        }
+
+        .error#form-data-error {
+          top: 269px;
+          font-size: 12px;
+          left: 24px;
+        }
+      }
+    }
+  }
+
+  #footer {
+    #footer-container {
+      #blocks-container {
+        width: 540px;
+      }
+    }
+  }
+
+  #order-container {
+    #order-bg-block {
+      width: 500px;
+
+      #order {
+        #order-content {
+          position: relative;
+          #order-form {
+
+
+            #name-error {
+              width: 100%;
+              top: 70px;
+              left: 30px;
+
+            }
+
+            #phone-error {
+              width: 100%;
+              top: 160px;
+              left: 30px;
+
+            }
+          }
+
+
+          #order-phone {
+            position: absolute;
+            width: 100px;
+            top: 132px;
+            right: -48px;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 479 - 579*/
+@media screen and (max-width: 579px) {
+  #first {
+    #header {
+      width: 100%;
+
+      #header-menu {
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+
+
+    #first-kitchens {
+      width: 100%;
+
+      #first-kitchens-title {
+        h1 {
+          font-size: 40px;
+        }
+      }
+
+      #kitchen-content {
+        width: 100%;
+
+        #first-key {
+          #first-key-text {
+            font-size: 19px;
+            width: 255px;
+          }
+        }
+
+        .make-order {
+          margin-bottom: 20px;
+        }
+
+        #advantages {
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
+  #contacts {
+    #form-container {
+      margin: 0 auto;
+    }
+
+    #contacts-image {
+      display: none;
+    }
+  }
+
+  #portfolio {
+    #kitchens {
+      width: 300px;
+
+      .kitchen {
+        .kitchen-content {
+          width: 100%;
+          box-shadow: none;
+          border: none;
+
+          .location {
+            .location-item {
+              span {
+                margin-left: 5px;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+
+      .slick-dots {
+        top: 222px;
+
+        li {
+          margin: 0 14px;
+        }
+      }
+
+      .slick-next {
+        top: 110px;
+        right: 5px;
+      }
+
+      .slick-prev {
+        left: 12px;
+        top: 110px;
+      }
+    }
+  }
+
+  #pluses {
+    #pluses-container {
+      .plus {
+        .plus-image {
+          width: 140px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    #new-kitchen {
+      justify-content: center;
+      align-items: center;
+
+      #new-kitchen-image {
+        right: 0;
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+      }
+
+    }
+  }
+
+  .title {
+    width: 100%;
+    margin: 0 auto;
+
+    .title-image {
+      width: 50px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .title-description {
+      width: 400px;
+    }
+  }
+
+  #footer {
+    #footer-container {
+      #blocks-container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        .footer-block {
+          padding-top: 30px;
+
+          #footer-media-links {
+            margin: 20px auto;
+          }
+
+          .fourth-block-container {
+            margin: 0 auto;
+          }
+
+        }
+      }
+
+      #rights {
+        padding: 20px 0;
+      }
+    }
+  }
+
+  #reviews {
+    #reviews-container {
+      width: 100%;
+
+      .review {
+        margin-left: 0;
+        margin-right: 0;
+
+        .review-content {
+          width: 300px;
+          height: 165px;
+
+          iframe {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .review-title {
+          width: 100%;
+        }
+      }
+    }
+  }
+  #order-container {
+    overflow: scroll;
+    align-items: flex-start;
+    padding-top: 40px;
+    #order-bg-block {
+      width: 300px;
+      #order {
+        padding: 20px;
+        #order-content {
+          #order-phone {
+            width: 80px;
+            top: -216px;
+            right: -13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* 320 - 478 */
+@media screen and (max-width: 479px) {
+  #first, #guarantees, #portfolio, #pluses, #reviews, #contacts, #footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #first {
+    #header {
+      .logo {
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      #header-menu {
+        flex-direction: column;
+        align-items: center;
+
+        a {
+          margin-bottom: 20px;
+          font-size: 19px;
+        }
+      }
+    }
+
+    #first-kitchens {
+      text-align: center;
+      margin-top: 40px;
+      width: 300px;
+
+      #first-kitchens-title {
+        width: 100%;
+
+        h1 {
+          font-size: 37px;
+
+        }
+      }
+    }
+
+    #links-container {
+      position: static;
+      height: auto;
+      width: 200px;
+      margin: 0 auto;
+      padding-bottom: 20px;
+      flex-direction: unset;
+    }
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .title {
+    text-align: center;
+
+    .title-text {
+      margin: 0 auto;
+    }
+
+    .title-image {
+      display: none;
+    }
+
+    .title-description {
+      width: 300px;
+    }
+  }
+
+  #pluses {
+    #pluses-container {
+      .plus {
+        .plus-text {
+          width: 100%;
+        }
+      }
+    }
+
+    #new-kitchen {
+      #new-kitchen-content {
+        .new-kitchen-info {
+          width: 300px;
+          text-align: center;
+
+          .new-kitchen-text {
+            width: 100%;
+          }
+
+          &:first-child .new-kitchen-text {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    #experience {
+      margin-left: auto;
+      margin-right: auto;
+      width: 300px;
+
+      #experience-title {
+        height: auto;
+        width: 100%;
+
+        #experience-title-text {
+          padding: 20px;
+          text-align: center;
+
+          span#exp-number {
+            font-size: 100px;
+            width: 100%;
+            line-height: 70px;
+          }
+
+          span#years {
+            width: 100%;
+            position: static;
+            transform: none;
+            font-size: 50px;
+            height: 40px;
+            line-height: 40px;
+          }
+
+          span#exp-guaranty {
+            width: 100%;
+            font-size: 50px;
+            height: 40px;
+            line-height: 40px;
+          }
+        }
+      }
+
+      #experience-content {
+        width: 250px;
+
+        #experience-content-text {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+
+  #reviews {
+    #reviews-container {
+      .review {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  #contacts {
+    .title {
+      margin-top: 70px;
+    }
+  }
+}
+
+/*
+!* 480 - 499 *!
+@media screen and (max-width: 499px) {
+
+}*/

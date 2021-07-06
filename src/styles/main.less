@@ -1,0 +1,1029 @@
+.width() {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #fdfdfc;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("../../fonts/Gilroy-Light.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../../fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../../fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Black";
+  src: url("../../fonts/Gilroy-Black.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url("../../fonts/Gilroy-Semibold.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: url("../../fonts/Gilroy-Extrabold.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Heavy";
+  src: url("../../fonts/Gilroy-Heavy.ttf");
+}
+
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("../../fonts/ProximaNova-Bold.ttf");
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../../fonts/MyriadPro-Regular.ttf");
+}
+
+
+.title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .title-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 44px;
+  }
+
+  .title-text {
+    margin: 0;
+    font-size: 35px;
+    font-family: "Gilroy-Bold", sans-serif;
+    color: #381900;
+
+    span {
+      color: rgb(249, 155, 0);
+    }
+  }
+
+  .title-description {
+    font-size: 19.697px;
+    font-family: "Gilroy-Medium", sans-serif;
+    color: rgb(56, 25, 0);
+    line-height: 1.75;
+    width: 988px;
+    margin: 45px 0 0 135px;
+  }
+}
+
+.btn {
+  background-image: -moz-linear-gradient(90deg, rgb(247, 146, 0) 0%, rgb(255, 180, 0) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgb(247, 146, 0) 0%, rgb(255, 180, 0) 100%);
+  background-image: -ms-linear-gradient(90deg, rgb(247, 146, 0) 0%, rgb(255, 180, 0) 100%);
+  width: 324px;
+  height: 70px;
+  font-size: 20px;
+  font-family: "ProximaNova-Bold", sans-serif;
+  color: rgb(255, 255, 255);
+  border: none;
+  outline: 0;
+  border-radius: 33px;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(254, 175, 0, 0.5);
+  }
+}
+
+#first {
+  position: relative;
+  background: url("../../images/first-bg.png");
+  height: 880px;
+  background-position: center;
+
+  #header {
+    .width();
+    padding-top: 26px;
+    display: flex;
+    align-items: flex-end;
+
+    .logo {
+      margin-right: 218px;
+    }
+
+    #header-menu {
+      display: flex;
+      justify-content: space-between;
+      width: 615px;
+
+      a {
+        font-size: 18px;
+        font-family: "Gilroy", sans-serif;
+        color: rgb(255, 246, 238);
+        text-decoration: none;
+
+        &:hover {
+          color: rgb(254, 175, 0);
+        }
+
+        &.active {
+          color: rgb(254, 175, 0);
+        }
+      }
+    }
+  }
+
+  #first-kitchens {
+    width: 1200px;
+    margin: 132px auto 0 auto;
+
+    #first-kitchens-title {
+      width: 746px;
+      margin-bottom: 86px;
+
+      h1 {
+        margin: 0;
+        font-size: 50px;
+        font-family: "Gilroy-ExtraBold", sans-serif;
+        color: rgb(255, 255, 255);
+      }
+    }
+
+    #kitchen-content {
+      width: 600px;
+
+      #first-key {
+        display: flex;
+        align-items: center;
+        margin-bottom: 80px;
+
+        #first-key-text {
+          font-size: 25px;
+          font-family: "Gilroy", sans-serif;
+          color: rgb(255, 246, 238);
+          margin-left: 24px;
+        }
+      }
+
+      .make-order {
+        margin-bottom: 100px;
+
+        .btn {
+          &:hover {
+            box-shadow: 0 5px 10px rgba(254, 175, 0, 0.5);
+          }
+        }
+      }
+
+      #advantages {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .advantage {
+          display: flex;
+          align-items: center;
+
+          .advantage-text {
+            font-size: 15.245px;
+            font-family: "Gilroy-Semibold", sans-serif;
+            color: rgb(255, 255, 255);
+          }
+        }
+      }
+    }
+  }
+
+  #links-container {
+    position: absolute;
+    right: 88px;
+    top: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-between;
+
+    a:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.orange-line {
+  width: 100%;
+  height: 30px;
+  background: #f99c00;
+}
+
+
+#guarantees {
+  height: 905px;
+  background: url("../../images/bg-garantis-2.png");
+  background-position: right;
+  background-repeat: no-repeat;
+
+  #guarantees-container {
+    padding-top: 120px;
+    .width();
+
+    #guarantee-container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 100px 0 0 0;
+
+      .guarantee {
+        position: relative;
+        width: 450px;
+
+        &:nth-child(1) {
+          margin-left: 40px;
+
+          .guarantee-number {
+            left: -42px;
+          }
+        }
+
+        &:nth-child(2) {
+          margin: 110px 0 0 170px;
+        }
+
+        &:nth-child(3) {
+          width: 400px;
+          margin: 130px 0 0 140px;
+        }
+
+        &:nth-child(4) {
+          width: 350px;
+          margin: 220px 0 0 220px;
+        }
+
+        .guarantee-number {
+          font-size: 200px;
+          font-family: "Gilroy-Bold", sans-serif;
+          color: rgba(126, 123, 121, 0.2);
+          position: absolute;
+          left: -62px;
+          top: -120px;
+        }
+
+        .guarantee-title {
+          margin: 0 0 30px 0;
+          font-size: 25px;
+          font-family: "Gilroy-Bold", sans-serif;
+          color: rgb(56, 25, 0);
+        }
+
+        .guarantee-text {
+          font-size: 15px;
+          font-family: "Gilroy-Medium", sans-serif;
+          color: rgb(56, 25, 0);
+          line-height: 1.669;
+        }
+      }
+    }
+  }
+}
+
+
+#portfolio {
+  .width();
+  padding-top: 150px;
+
+  #kitchens {
+    position: relative;
+    margin-top: 50px;
+    .slick-prev {
+      position: absolute;
+      left: 40px;
+      z-index: 9;
+
+      &:hover {
+        &:before {
+          content: url("../../images/prev-arrow-hover.png");
+        }
+      }
+    }
+
+    .slick-dots {
+      left: -204px;
+      bottom: 56px;
+
+      li {
+        width: 14px;
+        height: 14px;
+        margin: 0 6px;
+
+        &.slick-active {
+          button {
+            &:before {
+
+              content: url("../../images/dot-active.png");
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      button {
+        width: 14px;
+        height: 14px;
+        padding: 0;
+
+        &:before {
+          opacity: 1;
+          width: 14px;
+          height: 14px;
+          content: url('../../images/button-comon.png');
+        }
+
+        &:hover {
+          &:before {
+            content: url("../../images/dot-active.png");
+          }
+        }
+      }
+    }
+  }
+
+
+  .slick-next {
+    position: absolute;
+    right: 450px;
+    width: 35px;
+
+    &:hover {
+      &:before {
+        content: url("../../images/next-arrow-hover.png");
+      }
+    }
+  }
+
+  .kitchen {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .kitchen-image {
+      border: 12px solid white;
+      box-shadow: 0 0 20px rgba(215, 215, 215, 0.5);
+    }
+
+    .kitchen-content {
+      width: 380px;
+
+      .kitchen-number {
+        margin-top: -30px;
+        margin-bottom: 5px;
+        font-size: 100px;
+        font-family: "Gilroy-Bold", sans-serif;
+        color: rgba(126, 123, 121, 0.102);
+      }
+
+      .kitchen-title {
+        font-size: 25px;
+        font-family: "Gilroy-Bold", sans-serif;
+        color: rgb(56, 25, 0);
+      }
+
+      .kitchen-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+
+        .kitchen-info-content {
+          display: flex;
+          align-items: flex-end;
+          margin-top: 18px;
+
+          .kitchen-info-name {
+            width: 50%;
+            font-size: 17.727px;
+            font-family: "Gilroy-Bold", sans-serif;
+            color: rgb(56, 25, 0);
+          }
+
+          .kitchen-info-type {
+            width: 50%;
+            font-size: 17.727px;
+            font-family: "Gilroy-Medium", sans-serif;
+            color: rgb(56, 25, 0);
+          }
+        }
+      }
+
+      .location {
+        margin-top: 105px;
+        display: flex;
+        justify-content: space-between;
+
+        .location-item {
+          display: flex;
+          align-items: flex-end;
+
+          span {
+            margin-left: 10px;
+            font-size: 18px;
+            font-family: "Gilroy-Medium", sans-serif;
+            color: rgb(56, 25, 0);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+#pluses {
+  .width();
+
+  #pluses-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    align-items: flex-start;
+
+    .plus {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .plus-image {
+        img:hover {
+          transition: all 1s ease;
+          transform: scale(1.1);
+        }
+      }
+
+      .plus-text {
+        width: 320px;
+        font-family: "Gilroy-Medium", sans-serif;
+        font-size: 19.696px;
+        color: rgb(56, 25, 0);
+        line-height: 1.75;
+        text-align: center;
+      }
+
+      span {
+        font-family: "Gilroy-Bold", sans-serif;
+      }
+    }
+  }
+
+  .title {
+    margin-top: 160px;
+  }
+
+  #new-kitchen {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    #new-kitchen-content {
+      .new-kitchen-info {
+        .new-title {
+          font-size: 25px;
+          font-family: "Gilroy-Bold", sans-serif;
+          color: rgb(56, 25, 0);
+          margin: 30px 0;
+        }
+
+        .new-kitchen-text {
+          font-size: 15px;
+          font-family: "Gilroy-Medium", sans-serif;
+          color: rgb(56, 25, 0);
+          line-height: 1.668;
+          width: 380px;
+        }
+
+        &:first-child {
+          .new-kitchen-text {
+            width: 335px;
+          }
+        }
+      }
+    }
+  }
+
+  #experience {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+
+    #experience-title {
+      border-radius: 20px;
+      background-image: -moz-linear-gradient(180deg, rgb(255, 180, 0) 0%, rgb(247, 146, 0) 100%);
+      background-image: -webkit-linear-gradient(180deg, rgb(255, 180, 0) 0%, rgb(247, 146, 0) 100%);
+      background-image: -ms-linear-gradient(180deg, rgb(255, 180, 0) 0%, rgb(247, 146, 0) 100%);
+      box-shadow: 0px 16px 30.4px 1.6px rgba(223, 197, 171, 0.5);
+      width: 427px;
+      height: 346px;
+      padding: 16px;
+      box-sizing: border-box;
+      display: flex;
+
+      #experience-title-text {
+        width: 100%;
+        border: 2px solid white;
+        border-radius: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 42px 47px;
+
+        span#exp-number {
+          font-size: 180px;
+          font-family: "Gilroy-Heavy", sans-serif;
+          color: rgb(255, 255, 255);
+          line-height: 150px;
+        }
+
+        span#years {
+          font-family: "Gilroy-Black", sans-serif;
+          font-size: 80px;
+          color: rgb(255, 235, 196);
+          transform: rotate(-90deg);
+          position: absolute;
+          right: 8px;
+          top: 67px;
+        }
+
+        span#exp-guaranty {
+          font-size: 70px;
+          font-family: "Gilroy-Bold", sans-serif;
+          color: rgb(255, 235, 196);
+          height: 50px;
+          line-height: 50px;
+
+        }
+      }
+    }
+
+    #experience-content {
+      border: 2px solid rgb(189, 177, 165);
+      border-radius: 0 20px 20px 0;
+      border-left: none;
+      position: relative;
+      padding: 50px 30px 24px 124px;
+      width: 100%;
+
+      #experience-content-apostrophe {
+        position: absolute;
+        left: 40px;
+        top: 20px;
+      }
+
+      #experience-content-text {
+        width: 550px;
+        font-size: 19.695px;
+        font-family: "Gilroy-Medium", sans-serif;
+        color: rgb(56, 25, 0);
+        line-height: 1.75;
+      }
+
+      #experience-content-man {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        #man-name {
+          font-size: 18px;
+          font-family: "MyriadPro", sans-serif;
+          color: rgb(56, 25, 0);
+          line-height: 1.222;
+          width: 230px;
+        }
+      }
+    }
+  }
+}
+
+#reviews {
+  .width();
+  margin-top: 150px;
+
+  #reviews-container {
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .review {
+      margin: 78px 36px 0 36px;
+
+      .review-content {
+        box-shadow: 0 0 20px rgba(75, 75, 75, 0.56);
+        width: 486px;
+        height: 274px;
+
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .review-title {
+        margin-top: 20px;
+        font-size: 17.727px;
+        font-family: "Gilroy-Bold", sans-serif;
+        color: rgb(56, 25, 0);
+      }
+    }
+  }
+}
+
+#contacts {
+  .width();
+  position: relative;
+  margin-bottom: 66px;
+
+  .title {
+    margin-top: 150px;
+
+    .title-description {
+      width: 700px;
+    }
+  }
+
+  #form-container {
+    margin-top: 70px;
+    width: 720px;
+    box-sizing: border-box;
+    padding: 34px 20px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px #f4ebe3;
+
+    #form-title {
+      margin: 0 auto;
+      width: 500px;
+      font-size: 24.596px;
+      font-family: "Gilroy-Bold", sans-serif;
+      color: rgb(56, 25, 0);
+      line-height: 1.4;
+      text-align: center;
+
+    }
+
+    #form {
+      position: relative;
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .input {
+        margin-top: 20px;
+      }
+
+      .error {
+        position: absolute;
+        font-family: "Gilroy", sans-serif;
+        color: red;
+        font-size: 14.684px;
+        display: none;
+      }
+
+      .error#form-name-error {
+        left: 27px;
+        top: 90px;
+      }
+
+      .error#form-phone-error {
+        right: 60px;
+        top: 90px;
+      }
+
+      .error#form-data-error {
+        left: 27px;
+        bottom: -19px;
+      }
+
+      .btn {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  #contacts-image {
+    right: -130px;
+    bottom: -70px;
+    position: absolute;
+  }
+}
+
+.input {
+  border: 1px solid rgb(126, 123, 121);
+  width: 322px;
+  height: 69px;
+  border-radius: 30px;
+  padding: 26px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Gilroy", sans-serif;
+  color: rgb(126, 123, 121);
+  font-size: 17.684px;
+
+  &::placeholder {
+    font-size: 17.684px;
+    font-family: "Gilroy", sans-serif;
+    color: rgb(126, 123, 121);
+  }
+}
+
+.border-red {
+  border: 1px solid red;
+}
+
+#orange-line-footer {
+  margin-bottom: -1px;
+  width: 100%;
+  height: 21px;
+  background-image: -moz-linear-gradient(180deg, rgb(255, 180, 0) 0%, rgb(247, 146, 0) 100%);
+  background-image: -webkit-linear-gradient(180deg, rgb(255, 180, 0) 0%, rgb(247, 146, 0) 100%);
+  background-image: -ms-linear-gradient(180deg, rgb(255, 180, 0) 0%, rgb(247, 146, 0) 100%);
+}
+
+a {
+  text-decoration: none;
+
+  svg {
+    fill: white;
+    width: 30px;
+    height: 30px;
+  }
+
+  &:nth-child(2) {
+    svg {
+      border-radius: 8px;
+    }
+  }
+}
+
+#footer {
+  height: 380px;
+  background: url("../../images/footer-bg.png");
+  background-position: top center;
+
+
+  #footer-container {
+    .width();
+
+    #blocks-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 60px 0 80px 0;
+
+      .footer-block {
+        display: flex;
+        flex-direction: column;
+        padding-top: 26px;
+
+        &:first-child {
+          padding-top: 0;
+        }
+
+        .footer-block-title {
+          font-size: 20px;
+          font-family: "Gilroy-Bold", sans-serif;
+          color: rgb(255, 255, 255);
+        }
+
+        .footer-block-text {
+          margin-top: 20px;
+          font-size: 15px;
+          font-family: "Gilroy", sans-serif;
+          color: rgb(255, 255, 255);
+        }
+
+        .fourth-block-container {
+          display: flex;
+
+
+          .contacts {
+            margin-left: 12px;
+            font-size: 20px;
+            font-family: "Gilroy", sans-serif;
+            color: rgb(255, 255, 255);
+          }
+
+          &:first-child {
+            margin-bottom: 36px;
+          }
+        }
+
+        #footer-media-links {
+          width: 160px;
+          margin-top: 55px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          a:hover {
+            opacity: 0.9;
+          }
+
+        }
+      }
+    }
+
+    #rights {
+      font-size: 15px;
+      font-family: "Gilroy", sans-serif;
+      color: rgb(140, 131, 122);
+      text-align: center;
+      padding: 45px 0;
+      border-top: 2px solid rgba(235, 235, 235, 0.5);
+    }
+  }
+}
+
+.footer-svg-container {
+  display: flex;
+  align-items: flex-end;
+
+  svg {
+    width: 26px;
+    height: 20px;
+    fill: #fefefe;
+  }
+}
+
+#order-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  #order-bg-block {
+    background: #fef5ee;
+    width: 833px;
+    position: relative;
+    border-radius: 20px;
+
+    #order {
+      border-radius: 20px;
+      background: url("../../images/order-bg.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 833px;
+      position: relative;
+      padding: 44px 90px 30px 90px;
+      box-sizing: border-box;
+
+      #order-title {
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 35px;
+        font-family: "Gilroy-ExtraBold", sans-serif;
+        color: rgb(56, 25, 0);
+      }
+
+      #order-text {
+        text-align: center;
+        font-size: 18px;
+        font-family: "Gilroy", sans-serif;
+        color: rgb(56, 25, 0);
+        line-height: 1.944;
+      }
+
+      #order-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        #order-phone {
+          margin-left: -46px;
+          margin-bottom: -95px;
+        }
+
+        #order-form {
+          width: 326px;
+
+          .input {
+            margin-bottom: 20px;
+            background: #fef5ee;
+          }
+
+          .btn {
+            margin-bottom: 20px;
+          }
+
+          #order-form-description {
+            margin: 0 auto;
+            width: 240px;
+            font-size: 12.772px;
+            font-family: "Gilroy-Light", sans-serif;
+            color: rgb(126, 123, 121);
+            text-align: center;
+
+            a {
+              font-size: 12.772px;
+              font-family: "Gilroy-Light", sans-serif;
+              color: rgb(126, 123, 121);
+              border-bottom: 1px solid rgb(126, 123, 121);
+            }
+          }
+
+          #name-error {
+            position: absolute;
+            font-family: "Gilroy", sans-serif;
+            color: red;
+            font-size: 14.684px;
+            bottom: 240px;
+            right: 210px;
+            display: none;
+          }
+
+          #phone-error {
+            position: absolute;
+            font-family: "Gilroy", sans-serif;
+            color: red;
+            font-size: 14.684px;
+            bottom: 152px;
+            right: 160px;
+            display: none;
+          }
+        }
+      }
+    }
+
+    #order-success {
+      display: none;
+      background: url("../../images/order-bg.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 18px;
+      font-family: "Gilroy", sans-serif;
+      color: rgb(56, 25, 0);
+    }
+  }
+}
+
+
+.slick-list {
+  padding: 20px 0 20px 20px;
+  margin: 0 0 0 -20px;
+}
+
+/*      arrows          */
+.slick-prev:before {
+  content: url("../../images/prev-arrow.png");
+}
+
+.slick-next:before {
+  content: url("../../images/next-arrow.png");
+}
+
+.slick-prev:before, .slick-next:before {
+  opacity: 1;
+}
+
+/*      arrows end             */
+
+
+/*     dots     */
+
+
+button#slick-slide-control00, button#slick-slide-control01, button#slick-slide-control02, button#slick-slide-control03, button#slick-slide-control04 {
+  margin-left: 0;
+  margin-right: 6px;
+}
+
+/*            dots end           */
+
+
+@import "adaptive";
