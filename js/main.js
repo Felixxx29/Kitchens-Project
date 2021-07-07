@@ -3,8 +3,6 @@ $(document).ready(() => {
         animateClass: 'animate__animated',
     });
 
-    let loader = $('#loader');
-
     $('#kitchens').slick({
         dots: true,
         infinite: true,
@@ -23,10 +21,6 @@ $(document).ready(() => {
 
     $('#menu > a').click(() => {
         $('#menu').removeClass('menu-open');
-    });
-
-    $(document).on('submit', '.form-order', function (e) {
-        e.preventDefault();
     });
 
     $(document).on('submit', '.order-call', function (e) {
@@ -66,7 +60,6 @@ $(document).ready(() => {
             $('#name-error').hide();
             $('#phone-error').hide();
             event.preventDefault();
-            loader.css('display', 'flex')
             $.ajax({
                 type: 'post',
                 url: 'mail.php',
@@ -80,8 +73,6 @@ $(document).ready(() => {
                     alert('Ошибка заказа. Свяжитесь, пожалуйста, по номеру телефона.');
                 }
             });
-            loader.hide();
-
         }
     });
 
@@ -94,31 +85,25 @@ $(document).ready(() => {
             $('#form-name-error').show();
             name.addClass('border-red');
             hasError = true;
-            event.preventDefault();
         } else {
             name.removeClass('border-red');
             $('#form-name-error').hide();
-            event.preventDefault();
         }
         if (!phone.val()) {
             $('#form-phone-error').show();
             phone.addClass('border-red');
             hasError = true;
-            event.preventDefault();
         } else {
             phone.removeClass('border-red');
             $('#form-phone-error').hide();
-            event.preventDefault();
         }
         if (!data.val()) {
             $('#form-data-error').show();
             data.addClass('border-red');
             hasError = true;
-            event.preventDefault();
         } else {
             data.removeClass('border-red');
             $('#form-data-error').hide();
-            event.preventDefault();
         }
 
         if (hasError === false) {
