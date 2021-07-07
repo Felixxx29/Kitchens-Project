@@ -3,6 +3,8 @@ $(document).ready(() => {
         animateClass: 'animate__animated',
     });
 
+    let loader = $('#loader');
+
     $('#kitchens').slick({
         dots: true,
         infinite: true,
@@ -52,7 +54,6 @@ $(document).ready(() => {
             hasError = true;
         } else {
             $('#name-error').hide();
-            hasError = false;
         }
         if (!phone.val()) {
             hasError = true;
@@ -60,12 +61,12 @@ $(document).ready(() => {
             event.preventDefault();
         } else {
             $('#phone-error').hide();
-            hasError = false;
         }
         if (hasError === false) {
             $('#name-error').hide();
             $('#phone-error').hide();
             event.preventDefault();
+            loader.css('display', 'flex')
             $.ajax({
                 type: 'post',
                 url: 'mail.php',
@@ -79,6 +80,8 @@ $(document).ready(() => {
                     alert('Ошибка заказа. Свяжитесь, пожалуйста, по номеру телефона.');
                 }
             });
+            loader.hide();
+
         }
     });
 
@@ -93,7 +96,6 @@ $(document).ready(() => {
             hasError = true;
             event.preventDefault();
         } else {
-            hasError = false;
             name.removeClass('border-red');
             $('#form-name-error').hide();
             event.preventDefault();
@@ -104,7 +106,6 @@ $(document).ready(() => {
             hasError = true;
             event.preventDefault();
         } else {
-            hasError = false;
             phone.removeClass('border-red');
             $('#form-phone-error').hide();
             event.preventDefault();
@@ -115,7 +116,6 @@ $(document).ready(() => {
             hasError = true;
             event.preventDefault();
         } else {
-            hasError = false;
             data.removeClass('border-red');
             $('#form-data-error').hide();
             event.preventDefault();

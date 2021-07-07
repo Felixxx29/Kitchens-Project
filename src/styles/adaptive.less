@@ -761,12 +761,6 @@
       padding-bottom: 66px;
       overflow: hidden;
 
-      .title {
-        .title-description {
-
-        }
-      }
-
       #form-container {
         width: 440px;
 
@@ -780,13 +774,13 @@
 
           .error#form-name-error {
             top: 92px;
-            left: 24px;
+            left: 70px;
             font-size: 12px;
           }
 
           .error#form-phone-error {
             top: 181px;
-            left: 24px;
+            left: 70px;
             font-size: 12px;
             width: 191px;
           }
@@ -794,7 +788,7 @@
           .error#form-data-error {
             top: 269px;
             font-size: 12px;
-            left: 24px;
+            left: 70px;
           }
         }
       }
@@ -1247,10 +1241,20 @@
     #contacts {
       #form-container {
         width: 300px;
-      }
 
-      .title {
-        margin-top: 70px;
+        #form {
+          .error#form-name-error {
+            left: 24px;
+          }
+
+          .error#form-phone-error {
+            left: 24px;
+          }
+
+          .error#form-data-error {
+            left: 24px;
+          }
+        }
       }
     }
   }
