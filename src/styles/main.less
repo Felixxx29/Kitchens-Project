@@ -85,12 +85,13 @@ body {
   }
 
   .title-description {
+    letter-spacing: 0.8px;
     font-size: 19.697px;
     font-family: "Gilroy-Medium", sans-serif;
     color: rgb(56, 25, 0);
     line-height: 1.75;
-    width: 988px;
-    margin: 45px 0 0 135px;
+    width: 1066px;
+    margin: 33px 0 0 138px;
   }
 }
 
@@ -143,16 +144,26 @@ body {
         &:hover {
           color: rgb(254, 175, 0);
         }
-
-        &.active {
-          color: rgb(254, 175, 0);
+      }
+    }
+    #burger {
+      display: none;
+      height: 40px;
+      width: 40px;
+      margin-right: 10px;
+      svg {
+        fill: white;
+        height: 100%;
+        width: 100%;
+        &:hover {
+          fill: rgb(254, 175, 0);
         }
       }
     }
   }
 
   #first-kitchens {
-    width: 1200px;
+    max-width: 1200px;
     margin: 132px auto 0 auto;
 
     #first-kitchens-title {
@@ -164,6 +175,8 @@ body {
         font-size: 50px;
         font-family: "Gilroy-ExtraBold", sans-serif;
         color: rgb(255, 255, 255);
+        line-height: 1;
+        margin-left: 8px;
       }
     }
 
@@ -247,7 +260,7 @@ body {
     #guarantee-container {
       display: flex;
       flex-wrap: wrap;
-      padding: 100px 0 0 0;
+      padding: 94px 0 0;
 
       .guarantee {
         position: relative;
@@ -285,7 +298,7 @@ body {
         }
 
         .guarantee-title {
-          margin: 0 0 30px 0;
+          margin: 0 0 20px 0;
           font-size: 25px;
           font-family: "Gilroy-Bold", sans-serif;
           color: rgb(56, 25, 0);
@@ -305,11 +318,12 @@ body {
 
 #portfolio {
   .width();
-  padding-top: 150px;
+  padding-top: 85px;
 
   #kitchens {
     position: relative;
     margin-top: 50px;
+
     .slick-prev {
       position: absolute;
       left: 40px;
@@ -407,12 +421,12 @@ body {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-top: 20px;
+        margin-top: 18px;
 
         .kitchen-info-content {
           display: flex;
           align-items: flex-end;
-          margin-top: 18px;
+          margin-top: 14px;
 
           .kitchen-info-name {
             width: 50%;
@@ -452,14 +466,13 @@ body {
 }
 
 
-
 #pluses {
   .width();
 
   #pluses-container {
     display: flex;
     justify-content: space-between;
-    padding-top: 100px;
+    padding-top: 80px;
     align-items: flex-start;
 
     .plus {
@@ -491,7 +504,7 @@ body {
   }
 
   .title {
-    margin-top: 160px;
+    margin-top: 100px;
   }
 
   #new-kitchen {
@@ -502,11 +515,21 @@ body {
 
     #new-kitchen-content {
       .new-kitchen-info {
+        display: flex;
+
+        .new-kitchen-ellipse {
+          padding-top: 10px;
+          margin-right: 10px;
+
+          img {
+          }
+        }
+
         .new-title {
           font-size: 25px;
           font-family: "Gilroy-Bold", sans-serif;
           color: rgb(56, 25, 0);
-          margin: 30px 0;
+          margin: 0 0 30px 0;
         }
 
         .new-kitchen-text {
@@ -515,6 +538,7 @@ body {
           color: rgb(56, 25, 0);
           line-height: 1.668;
           width: 380px;
+          margin-bottom: 40px;
         }
 
         &:first-child {
@@ -527,7 +551,7 @@ body {
   }
 
   #experience {
-    margin-top: 80px;
+    margin-top: 36px;
     display: flex;
     align-items: center;
 
@@ -603,6 +627,7 @@ body {
         font-family: "Gilroy-Medium", sans-serif;
         color: rgb(56, 25, 0);
         line-height: 1.75;
+        margin-bottom: 30px;
       }
 
       #experience-content-man {
@@ -612,10 +637,10 @@ body {
 
         #man-name {
           font-size: 18px;
-          font-family: "MyriadPro", sans-serif;
+          font-family: "Gilroy-Bold", sans-serif;
           color: rgb(56, 25, 0);
           line-height: 1.222;
-          width: 230px;
+          width: 266px;
         }
       }
     }
@@ -659,7 +684,7 @@ body {
 #contacts {
   .width();
   position: relative;
-  margin-bottom: 66px;
+  padding-bottom: 66px;
 
   .title {
     margin-top: 150px;
@@ -670,6 +695,7 @@ body {
   }
 
   #form-container {
+    display: inline-block;
     margin-top: 70px;
     width: 720px;
     box-sizing: border-box;
@@ -730,9 +756,9 @@ body {
   }
 
   #contacts-image {
-    right: -130px;
-    bottom: -70px;
     position: absolute;
+    right: -100px;
+    bottom: -4px;
   }
 }
 
@@ -740,7 +766,7 @@ body {
   border: 1px solid rgb(126, 123, 121);
   width: 322px;
   height: 69px;
-  border-radius: 30px;
+  border-radius: 35px;
   padding: 26px;
   box-sizing: border-box;
   outline: none;
@@ -782,6 +808,47 @@ a {
       border-radius: 8px;
     }
   }
+}
+
+#menu {
+  top: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  z-index: 1;
+  a {
+    font-size: 18px;
+    font-family: "Gilroy", sans-serif;
+    color: rgb(255, 246, 238);
+    text-decoration: none;
+
+    &:hover {
+      color: rgb(254, 175, 0);
+    }
+  }
+
+  #close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    svg {
+      fill: rgb(255, 246, 238);
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+#menu.menu-open {
+  display: flex;
 }
 
 #footer {

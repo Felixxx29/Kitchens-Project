@@ -3,8 +3,6 @@ $(document).ready(() => {
         animateClass: 'animate__animated',
     });
 
-    $('.slick-prev').addClass('wow bounceIn');
-
     $('#kitchens').slick({
         dots: true,
         infinite: true,
@@ -13,6 +11,17 @@ $(document).ready(() => {
         cssEase: 'linear'
     });
 
+    $('#burger').click(() => {
+        $('#menu').toggleClass('menu-open');
+    });
+
+    $('#close').click(() => {
+        $('#menu').removeClass('menu-open');
+    });
+
+    $('#menu > a').click(() => {
+        $('#menu').removeClass('menu-open');
+    });
 
     $(document).on('submit', '.form-order', function (e) {
         e.preventDefault();
@@ -36,19 +45,24 @@ $(document).ready(() => {
     $('.order-call').click(function (event) {
         let name = $('#name');
         let phone = $('#phone');
+        let hasError = false;
         if (!name.val()) {
             $('#name-error').show();
             event.preventDefault();
+            hasError = true;
         } else {
             $('#name-error').hide();
+            hasError = false;
         }
         if (!phone.val()) {
+            hasError = true;
             $('#phone-error').show();
             event.preventDefault();
-        } else  {
+        } else {
             $('#phone-error').hide();
+            hasError = false;
         }
-        if (name.val() && phone.val()){
+        if (hasError === false) {
             $('#name-error').hide();
             $('#phone-error').hide();
             event.preventDefault();
@@ -66,8 +80,6 @@ $(document).ready(() => {
                 }
             });
         }
-        name.val('');
-        phone.val('');
     });
 
     $('.form-order').click(function (event) {
@@ -81,6 +93,7 @@ $(document).ready(() => {
             hasError = true;
             event.preventDefault();
         } else {
+            hasError = false;
             name.removeClass('border-red');
             $('#form-name-error').hide();
             event.preventDefault();
@@ -91,6 +104,7 @@ $(document).ready(() => {
             hasError = true;
             event.preventDefault();
         } else {
+            hasError = false;
             phone.removeClass('border-red');
             $('#form-phone-error').hide();
             event.preventDefault();
@@ -101,12 +115,13 @@ $(document).ready(() => {
             hasError = true;
             event.preventDefault();
         } else {
+            hasError = false;
             data.removeClass('border-red');
             $('#form-data-error').hide();
             event.preventDefault();
         }
 
-        if (name.val() && phone.val() && data.val()) {
+        if (hasError === false) {
             $.ajax({
                 type: 'post',
                 url: 'mail.php',
@@ -121,6 +136,7 @@ $(document).ready(() => {
                     alert('Ошибка заказа. Свяжитесь, пожалуйста, по номеру телефона.');
                 }
             });
-        };
+        }
     });
+
 });
